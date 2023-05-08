@@ -23,12 +23,12 @@ set /p item_close= "Close upon using? (True or False) : "
 (echo.>items.txt)
 
 
-(echo [''%item_name%''] = {) >> items.txt
-(echo label = ''%item_label%'',) >> items.txt
-(echo weight = ''%item_weight%'',) >> items.txt
-(echo stack = ''%item_stack%'',) >> items.txt
-(echo close = ''%item_close%'',) >> items.txt
-(echo description = ''%item_descript%'',) >> items.txt
+(echo ['%item_name%'] = {) >> items.txt
+(echo label = '%item_label%',) >> items.txt
+(echo weight = '%item_weight%',) >> items.txt
+(echo stack = '%item_stack%',) >> items.txt
+(echo close = '%item_close%',) >> items.txt
+(echo description = '%item_descript%',) >> items.txt
 (echo },) >> items.txt
 goto :CopyItem
 
